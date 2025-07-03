@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <BNavbar toggleable="lg" type="dark" variant="primary">
+      <BContainer>
+        <BNavbarBrand to="/">Vue MockAPI App</BNavbarBrand>
+        <BNavbarToggle target="nav-collapse"></BNavbarToggle>
+        <BCollapse id="nav-collapse" is-nav>
+          <BNavbarNav>
+            <BNavItem to="/formulario">Formulario</BNavItem>
+            <BNavItem to="/usuarios">Usuarios MockAPI</BNavItem>
+          </BNavbarNav>
+        </BCollapse>
+      </BContainer>
+    </BNavbar>
+
+    <BContainer class="mt-4">
+      <router-view/>
+    </BContainer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
@@ -19,8 +30,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.container {
+  max-width: 1140px;
 }
 </style>
