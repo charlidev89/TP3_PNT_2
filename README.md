@@ -25,27 +25,6 @@ MockAPI	-	Backend mockeado
 📦 Estructura del proyecto
 ![image](https://github.com/user-attachments/assets/d4fd3468-d5c4-43b0-982f-98152a1e7ee4)
 
-🛠️ Instalación
-Clona el repositorio:
-
-bash
-git clone https://github.com/tu-usuario/vue-mockapi-app.git
-Instala dependencias:
-
-bash
-npm install
-Configura las variables de entorno (opcional):
-
-bash
-cp .env.example .env
-Inicia el servidor de desarrollo:
-
-bash
-npm run serve
-📜 Scripts disponibles
-
-Comando	Descripción
-npm run dev	Inicia servidor de desarrollo
 
 
 🚀 Colección Postman
